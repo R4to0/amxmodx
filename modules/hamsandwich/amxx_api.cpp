@@ -66,6 +66,10 @@ void OnAmxxAttach(void)
 	assert(strcmp(hooklist[Ham_SC_Item_AddToPlayer].name, "sc_item_addtoplayer") == 0);
 	assert(strcmp(hooklist[Ham_SC_Weapon_ExtractAmmoFromItem].name, "sc_weapon_extractammofromitem") == 0);
 	assert(strcmp(hooklist[Ham_SC_Player_EnteredObserver].name, "sc_player_enteredobserver") == 0);
+	assert(strcmp(hooklist[Ham_SC_FVecVisible].name, "sc_fvecvisible")==0);
+	assert(strcmp(hooklist[Ham_SC_HasAlienGibs].name, "sc_hasaliengibs")==0);
+	assert(strcmp(hooklist[Ham_SC_Item_UpdateClientData].name, "sc_item_updateclientdata")==0);
+	assert(strcmp(hooklist[Ham_SC_Weapon_UseDecrement].name, "sc_weapon_usedecrement")==0);
 
 	MF_AddNatives(pdata_natives_safe);
 

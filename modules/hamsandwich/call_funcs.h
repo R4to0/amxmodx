@@ -217,6 +217,32 @@ cell Call_Str_Str(AMX *amx, cell *params);
 
 cell Call_Void_Short(AMX *amx, cell *params);
 
+cell Call_Bool_Float_Float(AMX *amx, cell *params);
+
+cell Call_Bool_pVector_pVector_Float_Cbase_pVector_pVector_Bool(AMX *amx, cell *params);
+
+cell Call_Bool_pVector_pVector_Float_Cbase_pVector(AMX *amx, cell *params);
+
+cell Call_Bool_Vector_Vector_Float_Float(AMX *amx, cell *params);
+
+cell Call_Bool_Vector(AMX *amx, cell *params);
+
+cell Call_Bool_Vector_Cbase(AMX *amx, cell *params);
+
+cell Call_Bool_Cbase_pVector(AMX *amx, cell *params);
+
+cell Call_Void_Int_Str(AMX *amx, cell *params);
+
+cell Call_Vector_pVector_pVector_pVector(AMX *amx, cell *params);
+
+cell Call_Int_Int_Str_Int_Bool_Int(AMX *amx, cell *params);
+
+cell Call_Int_Vector_Vector_Cbase_pFloat_pVector_Bool(AMX *amx, cell *params);
+
+cell Call_Bool_Float(AMX *amx, cell *params);
+
+cell Call_Bool_Short(AMX *amx, cell *params);
+
 
 cell Call_Deprecated(AMX* amx, cell* params);
 

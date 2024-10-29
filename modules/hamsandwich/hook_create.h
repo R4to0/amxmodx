@@ -217,6 +217,32 @@ int Create_Str_Str(AMX *amx, const char *func);
 
 int Create_Void_Short(AMX *amx, const char *func);
 
+int Create_Bool_Float_Float(AMX *amx, const char *func);
+
+int Create_Bool_pVector_pVector_Float_Cbase_pVector_pVector_Bool(AMX *amx, const char *func);
+
+int Create_Bool_pVector_pVector_Float_Cbase_pVector(AMX *amx, const char *func);
+
+int Create_Bool_Vector_Vector_Float_Float(AMX *amx, const char *func);
+
+int Create_Bool_Vector(AMX *amx, const char *func);
+
+int Create_Bool_Vector_Cbase(AMX *amx, const char *func);
+
+int Create_Bool_Cbase_pVector(AMX *amx, const char *func);
+
+int Create_Void_Int_Str(AMX *amx, const char *func);
+
+int Create_Vector_pVector_pVector_pVector(AMX *amx, const char *func);
+
+int Create_Int_Int_Str_Int_Bool_Int(AMX *amx, const char *func);
+
+int Create_Int_Vector_Vector_Cbase_pFloat_pVector_Bool(AMX *amx, const char *func);
+
+int Create_Bool_Float(AMX *amx, const char *func);
+
+int Create_Bool_Short(AMX *amx, const char *func);
+
 
 int Create_Deprecated(AMX* amx, const char* func);
 

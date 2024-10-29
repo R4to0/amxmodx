@@ -413,7 +413,7 @@ enum
 	Ham_SC_UseSound,
 	Ham_SC_UnUseSound,
 	Ham_SC_RideMonster,
-	Ham_SC_CheckApplyGenericAttacks,
+	Ham_SC_CheckAndApplyGenericAttacks,
 	Ham_SC_CheckScared,
 	Ham_SC_CheckCreatureDanger,
 	Ham_SC_CheckFallDamage,
@@ -485,7 +485,7 @@ enum
 	Ham_Item_GetItemInfo,
 
 	//
-	// New addition - 20117
+	// New addition - 2017
 	//
 
 	Ham_SC_PreSpawn,
@@ -518,7 +518,7 @@ enum
 	Ham_SC_BeginRevive,
 	Ham_SC_EndRevive,
 	Ham_SC_CanPlaySequence,
-	Ham_SC_CanPlaySentence2,
+	Ham_SC_CanPlaySentence,
 	Ham_SC_PlayScriptedSentence,
 	Ham_SC_Item_AddToPlayer,
 	Ham_SC_Item_AddDuplicate,
@@ -549,6 +549,31 @@ enum
 	Ham_SC_Player_EnteredObserver,
 	Ham_SC_Player_LeftObserver,
 	Ham_SC_Player_IsObserver,
+
+	/** October 2024: Sven Co-op 5.25 changes/additions. **/
+
+	Ham_SC_Weapon_ExtractAmmo,
+	Ham_SC_Weapon_ExtractClipAmmo,
+	Ham_SC_HasHumanGibs,
+	Ham_SC_HasAlienGibs,
+	Ham_SC_BecomeDead,
+	Ham_SC_IRelationship,
+	Ham_SC_FInViewCone,
+	Ham_SC_FVecInViewCone,
+	Ham_SC_CheckLocalMove,
+	Ham_SC_ShouldAdvanceRoute,
+	Ham_SC_CheckRangeAttack1,
+	Ham_SC_CheckRangeAttack2,
+	Ham_SC_CheckMeleeAttack1,
+	Ham_SC_CheckMeleeAttack2,
+	Ham_SC_CheckEnemy,
+	Ham_SC_BuildNearestRoute,
+	Ham_SC_FindCover,
+	Ham_SC_FCanCheckAttacks,
+	Ham_SC_FValidateHintType,
+	Ham_SC_FCanActiveIdle,
+	Ham_SC_BarnacleVictimBitten,
+
 
 	HAM_LAST_ENTRY_DONT_USE_ME_LOL
 };
