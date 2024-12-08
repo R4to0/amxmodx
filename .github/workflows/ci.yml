@@ -134,4 +134,31 @@ jobs:
           cd build
           python3 ../configure.py --enable-optimize --metamod=${{ env.DEPENDENCIES_ROOT_WIN }}\metamod-am --hlsdk=${{ env.DEPENDENCIES_ROOT_WIN }}\hlsdk --mysql=${{ env.DEPENDENCIES_ROOT_WIN }}\mysql-5.5
           ambuild
-          
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-base-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/base
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-cstrike-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/cstrike
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-dod-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/dod
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-esf-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/esf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-ns-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/ns
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-tfc-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/tfc
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amxmodx-ts-${{ matrix.os }}
+          path: ${{ github.workspace }}/amxmodx/build/packages/ts
